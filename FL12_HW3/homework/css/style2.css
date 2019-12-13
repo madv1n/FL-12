@@ -82,6 +82,16 @@ body {
   align-items: center;
   position: relative; }
 
+.section_banner_button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 43px;
+  background-color: #e3ac00;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff; }
+
 div .section_card {
   width: 1116px;
   background-color: #3b3f4f;

@@ -1,3 +1,14 @@
+@mixin btnStyle {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 43px;
+    background-color: $joinBtnColor;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -64,14 +75,7 @@ body {
 }
 
 .header_button {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 43px;
-    background-color: $joinBtnColor;
-    border: none;
-    border-radius: 3px;
-    color: #ffffff;
+    @include btnStyle;
 }
 
 .login {
@@ -94,6 +98,9 @@ body {
     align-items: center;
     position: relative;
     
+}
+.section_banner_button {
+    @include btnStyle;
 }
 
 div {
@@ -154,19 +161,6 @@ div {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-@mixin btnStyle {
-    btnStyle{
-        font-family: "Source Sans Pro", sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 12px 43px;
-        background-color: $joinBtnColor;
-        border: none;
-        border-radius: 3px;
-        color: #ffffff;
-    }
 }
 
 .footer {
