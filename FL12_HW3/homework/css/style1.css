@@ -3,13 +3,17 @@
 
 body {
   width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fff; }
 
 .header {
   height: 720px;
   background: url(/img/m-h-day.jpg) center no-repeat;
   background-size: cover;
   border-radius: 0 0 40% 50% / 100% 60% 40% 0%; }
+  .header .header-wrap {
+    margin-left: 192px;
+    font-family: "Source Sans Pro", sans-serif; }
 
 .header-wrap {
   margin-left: 192px;
@@ -37,6 +41,7 @@ body {
       line-height: 16px; }
 
 .header_heading {
+  position: relative;
   width: 500px;
   word-spacing: 1px;
   letter-spacing: 1px;
@@ -44,7 +49,17 @@ body {
   font-weight: bold;
   line-height: 74px;
   color: #2c2f3c;
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  z-index: 2; }
+  .header_heading::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 50px;
+    background-color: #14a0c7;
+    left: 0;
+    bottom: 0;
+    z-index: -1; }
 
 .header_text {
   margin-top: 0;
@@ -52,7 +67,8 @@ body {
   color: #2c2f3c;
   white-space: pre-line;
   letter-spacing: 0.5px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-family: "Hind", sans-serif; }
 
 .header_button {
   font-family: "Source Sans Pro", sans-serif;
@@ -66,17 +82,28 @@ body {
 
 .login {
   margin-left: 150px;
-  color: #ffffff;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 21px; }
 
 .section_text {
   font-size: 42px;
+  position: relative;
   line-height: 43px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-  color: #21232e; }
+  font-weight: 600;
+  color: #2c2f3c; }
+  .section_text::after {
+    position: absolute;
+    content: "";
+    width: 193px;
+    height: 50px;
+    background-color: #14a0c7;
+    right: 11px;
+    bottom: 4px;
+    z-index: -1; }
 
-.section {
+.section, .section_card_right_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,9 +131,10 @@ div .section_card {
   div .section_card .section_card_heading {
     font-size: 23px;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
     margin-top: 50px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-family: "Source Sans Pro", sans-serif; }
   div .section_card .section_card_text {
     color: #cccacd;
     margin-bottom: 12px; }
@@ -121,10 +149,7 @@ div .section_card {
   border-radius: 5px; }
 
 .section_card_right_container {
-  display: flex;
-  flex-direction: column;
   width: 468px;
-  align-items: center;
   margin-left: 88px;
   text-align: justify; }
 
@@ -138,20 +163,51 @@ div .section_card {
   background: linear-gradient(to right, #649410, #2c5add);
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center; }
+  align-items: center; }
+  .section_banner .section_banner_text_wrap {
+    margin-left: 164px;
+    justify-content: flex-start;
+    margin-bottom: 16px; }
+    .section_banner .section_banner_text_wrap .section_banner_heading {
+      position: relative;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0px;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 15px;
+      color: #2c2f3c; }
+      .section_banner .section_banner_text_wrap .section_banner_heading::after {
+        position: absolute;
+        content: "";
+        width: 64px;
+        height: 50px;
+        background-color: #14a0c7;
+        right: 225px;
+        bottom: 0;
+        z-index: -1; }
+    .section_banner .section_banner_text_wrap .section_banner_text {
+      font-family: "Hind", sans-serif;
+      color: #cccacd;
+      margin-top: 0px; }
+  .section_banner .section_banner_button {
+    margin-left: 324px; }
 
 .footer {
   height: 243px;
-  background-color: #21232e; }
+  background-color: #21232e;
+  font-family: "Hind", sans-serif;
+  color: #cccacd; }
   .footer .footer-wrap {
     height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end; }
-    .footer .footer-wrap .footer_logo {
-      margin-bottom: 18px; }
+    .footer .footer-wrap .landing-logo {
+      margin-bottom: 18px;
+      color: #cccacd; }
     .footer .footer-wrap .footer_text {
-      width: 310px; }
+      width: 310px;
+      font-size: 14px; }
     .footer .footer-wrap .footer-cr {
       margin-bottom: 33px; }
