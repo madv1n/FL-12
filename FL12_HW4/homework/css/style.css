@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+}
+
+.page-header {
+    width: 100vh;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.site-navigation-list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 355px;
+    padding: 0;
+
+}
+
+.site-navigation-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.site-navigation-link:hover {
+    color: #bfba55;
+}
