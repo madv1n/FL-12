@@ -1,17 +1,29 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .container {
     margin: 0 auto;
 }
 
+.header-bar {
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    height: 10vh;
+    width: 100%;
+}
+
 .page-header {
-    width: 100vh;
-    height: 86px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .site-name {
@@ -27,7 +39,6 @@ body {
     margin: 0;
     width: 355px;
     padding: 0;
-
 }
 
 .site-navigation-link {
@@ -37,4 +48,133 @@ body {
 
 .site-navigation-link:hover {
     color: #bfba55;
+}
+
+.hero-wrapper { 
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 90vh;
+    width: 100%;
+
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.hero-heading {
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 36px;
+}
+
+.hero p {
+    color: #bfba55;
+    margin-bottom: 54px;
+    margin-top: 0;
+}
+
+.hero-btn {
+    text-transform: uppercase;
+    width: 158px;
+    height: 44px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.blog {
+    width: 900px;
+    margin: 113px auto 0 auto;
+}
+.blog-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.blog-heading {
+    margin-bottom: 10px;
+}
+.short-preview {
+    color: #777;
+    margin-bottom: 44px;
+}
+
+.blog-image {
+    width: 900px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.user-foto {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.user-name {
+    margin-right: 20px;
+}
+
+.blog-date {
+    margin-right: 16px;
+}
+
+.comments {
+    margin-right: 35px;
+}
+
+.blog-btn {
+    width: 189px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #777;
+    border-radius: 25px;
+}
+
+hr {
+    color: #f0f0f0;
+    margin-top: 63px;
+    margin-bottom: 85px;
+}
+
+.page-footer-wrapper {
+    margin-top: 112px;
+    height: 357px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer {
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.company-info {
+    width: 400px;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 25px;
 }
