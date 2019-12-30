@@ -88,7 +88,6 @@ if (attempts === 1) {
 
     continueGame = confirm('Do you want to play again?');
 
-    // Play again
     if (continueGame) {
         attempts = 3;
         fullPrize = 100;
