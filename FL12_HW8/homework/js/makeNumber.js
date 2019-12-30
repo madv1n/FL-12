@@ -10,3 +10,7 @@ function makeNumber(str) {
      }
      return result.join('');
 }
+
+makeNumber('erer384jjjfd123');
+makeNumber('123098h76gfdd');
+makeNumber('ijifjgdj');

@@ -12,10 +12,21 @@ function makeNumber(str) {
 }
 
 function countNumbers(str) {
-    let count = makeNumber(str);
-    result = {};
+	let counts = makeNumber(str);
+	let result = {};
+	for (var i = 0; i < counts.length; i++) {
+        if (counts[i] in result) {
 
-    for (let i = 0; i < count.length; i++) {
-        
-    }
+            result[counts[i]] += 1;
+
+        } else {
+            
+            result[counts[i]] = 1
+        }
+	}
+	return result;
 }
+
+countNumbers('erer384jj4444666888jfd123');
+countNumbers('jdjjka000466588kkkfs662555');
+countNumbers('');
