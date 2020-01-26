@@ -1,1 +1,21 @@
-/* Todo: your styles go here*/
+.open {
+    display: block;
+    list-style: none;
+}
+
+.close {
+   display: none;
+   list-style: none;
+}
+
+.empty {
+    font-style: italic;
+}
+
+.li {
+    list-style: none;
+}
+
+.li:hover {
+    background-color: lightgray;
+}
